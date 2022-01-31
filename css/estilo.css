@@ -1,0 +1,13 @@
+html {font-size: 10px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels, se estiver com dúvida sobre o tamanho dos pixel temos esse site: https://pt.piliapp.com/ruler/ */
+  font-family: 'Roboto Slab', serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
