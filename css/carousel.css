@@ -1,5 +1,5 @@
 :root {
-  --carousel-height: 200px;
+  --carousel-height: min(40vw, 500px);
   --control-size: 50px;
 }
 
@@ -9,11 +9,23 @@ body{
   margin: 0;
 }
 
+.carousel {
+  width: 90vw;
+  height: var(--carousel-height);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 .carousel .controls {
   opacity: 0;
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   justify-content: space-between;
   width: 100%;
@@ -36,24 +48,13 @@ body{
   cursor: pointer;
 }
 
+.carousel:hover .controls{
+  opacity: 1;
+}
+
 .carousel .slides {
   position: absolute;
   top: 50%;
-}
-
-.carousel {
-  width: 80vw;
-  height: var(--carousel-height);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.carousel:hover .controls{
-  opacity: 1;
 }
 
 .carousel .slides {

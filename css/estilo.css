@@ -1,8 +1,8 @@
 
 html {
   height: 100vh;
-  font-size: 10px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels, se estiver com dúvida sobre o tamanho dos pixel temos esse site: https://pt.piliapp.com/ruler/ */
-  font-family: 'Roboto Slab', serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */
+  font-size: 10px;
+  font-family: 'poppins', serif;
   background-image: linear-gradient(180deg, black, red);
 }
 
