@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="49px" height="83px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 0.34 0.58"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="773" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="800">
+	<font-face 
+		font-family="Poppins ExtraBold">
+		<font-face-src>
+			<font-face-name name="Poppins ExtraBold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="773" d="M514.133 117.764l-256.053 0 -38.8957 -117.764 -211.013 0 263.275 722.042 231.411 0 262.198 -722.042 -211.963 0 -38.9591 117.764zm-50.1717 153.683l-77.8548 233.501 -76.7779 -233.501 154.633 0z"/>
+   <glyph unicode="J" horiz-adv-x="598" d="M535.672 722.042l0 -478.278c0,-81.2756 -22.0451,-143.42 -66.0721,-186.434 -44.0269,-43.0134 -104.651,-64.4884 -181.809,-64.4884 -81.9091,0 -147.284,22.8687 -196.126,68.606 -48.8414,45.7373 -73.2304,111.619 -73.2304,197.709l198.723 0c0.633481,-56.6966 21.475,-85.0132 62.4612,-85.0132 36.8686,0 55.3029,23.1854 55.3029,69.6196l0 478.278 200.75 0z"/>
+   <glyph unicode="L" horiz-adv-x="502" d="M258.08 153.619l224.316 0 0 -153.619 -425.066 0 0 722.042 200.75 0 0 -568.423z"/>
+   <glyph unicode="O" horiz-adv-x="806" d="M403.528 -7.15834c-67.5924,0 -129.737,15.837 -186.37,47.6378 -56.6966,31.7374 -101.61,75.7643 -134.678,132.081 -33.1311,56.3798 -49.7283,120.045 -49.7283,191.058 0,71.0132 16.5972,134.678 49.7283,190.995 33.0677,56.3165 77.9815,100.217 134.678,131.637 56.6332,31.3573 118.778,47.0677 186.37,47.0677 68.2893,0 130.624,-15.7103 186.94,-47.0677 56.3165,-31.4207 100.85,-75.3209 133.665,-131.637 32.751,-56.3165 49.1581,-119.981 49.1581,-190.995 0,-71.0132 -16.4072,-134.678 -49.1581,-191.058 -32.8143,-56.3165 -77.5381,-100.343 -134.171,-132.081 -56.6966,-31.8008 -118.841,-47.6378 -186.434,-47.6378zm0 186.37c51.2486,0 91.6647,16.7239 121.375,50.2351 29.7103,33.4478 44.5337,78.1716 44.5337,134.171 0,57.33 -14.8235,102.561 -44.5337,135.692 -29.7103,33.1311 -70.1264,49.6649 -121.375,49.6649 -51.8821,0 -92.4883,-16.5339 -121.882,-49.6649 -29.3302,-33.1311 -44.0269,-78.3616 -44.0269,-135.692 0,-56.6966 14.6968,-101.61 44.0269,-134.678 29.3935,-33.1311 69.9997,-49.7283 121.882,-49.7283z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Poppins ExtraBold";font-variant:normal;font-style:normal;font-weight:800;src:url("#FontID0") format(svg)}
+    .fil0 {fill:white}
+    .fnt0 {font-weight:800;font-size:0.13px;font-family:'Poppins ExtraBold'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2187305606848">
+   <path class="fil0" d="M0.3 0.17c0,-0.07 -0.06,-0.13 -0.13,-0.13 -0.07,0 -0.13,0.06 -0.13,0.13 0,0.01 0.06,0.02 0.13,0.02 0.07,0 0.13,-0.01 0.13,-0.02zm-0.13 0.29c0.09,0 0.17,-0.02 0.17,-0.11l0 -0.18c0,-0.09 -0.08,-0.17 -0.17,-0.17 -0.09,0 -0.17,0.08 -0.17,0.17l0 0.18c0,0.09 0.08,0.11 0.17,0.11z"/>
+   <text x="-0.01" y="0.58"  class="fil0 fnt0">LOJA</text>
+  </g>
+ </g>
+</svg>

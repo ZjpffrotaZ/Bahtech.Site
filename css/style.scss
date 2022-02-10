@@ -1,0 +1,158 @@
+$carousel-height: MIN(40vw, 500px);
+$control-size: 50px;
+
+html {
+  height: 100vh;
+  font-size: 10px;
+  font-family: 'poppins', serif;
+  overflow-x: hidden;
+  --toolbar-bg: #949494;
+  --body-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --toolbar-bg: #313131;
+    --body-bg: #000000;
+  }
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: var(--body-bg);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(165, 0, 0);
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color:black;
+}
+
+h2,h3,h4,h5 {
+  color: black;
+}
+
+.header {
+  top: 0%;
+  position: fixed;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.toolbar {
+  border-bottom:1px solid black ;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  background-color: var(--toolbar-bg);
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  
+  img {
+    height: 55px;
+  }
+}
+
+.hotbar {
+  
+  .not_final {
+    border-right: 0;
+  }
+
+  ul {
+    width: 100vw;
+    justify-content: center;
+    margin: 0;
+    margin-top: -1px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+    }
+
+    p {
+      padding: 5px 12px;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      line-height: 1.5;
+      background-color: var(--toolbar-bg);
+      border: 1px solid #000000 ;
+      border-top: 0;
+      margin: 0;
+    }
+  }
+}
+
+.content {
+  margin-top: 140px;
+}
+
+.carousel {
+  width: 93vw;
+  height: $carousel-height;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto 0 auto;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+
+  .controls {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: calc(50% - calc(MIN(calc(5 * 1vw), 50px) / 2));
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    transition: all ease 0.5s;
+
+    .control {
+      font-family: sans-serif;
+      font-size: MIN(18px, calc(3 * 1vw));
+      background-color: #ffffff99;
+      border-radius: 50%;
+      margin: 0 5px;
+      height: MIN(calc(5 * 1vw), 50px);
+      width: MIN(calc(5 * 1vw), 50px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: ease 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  &:hover .controls {
+    opacity: 1;
+  }
+
+  .slides {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+
+    .slide {
+      min-width: 100%;
+      min-height: $carousel-height;
+      height: auto;
+    }
+  }
+}

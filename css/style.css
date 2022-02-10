@@ -1,0 +1,185 @@
+html {
+  height: 100vh;
+  font-size: 10px;
+  font-family: 'poppins', serif;
+  overflow-x: hidden;
+  --toolbar-bg: #949494;
+  --body-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --toolbar-bg: #313131;
+    --body-bg: #000000;
+  }
+}
+
+body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  background-color: var(--body-bg);
+}
+
+h1 {
+  text-align: center;
+  color: #a50000;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: black;
+}
+
+h2, h3, h4, h5 {
+  color: black;
+}
+
+.header {
+  top: 0%;
+  position: fixed;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.toolbar {
+  border-bottom: 1px solid black;
+  height: 60px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--toolbar-bg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+.toolbar img {
+  height: 55px;
+}
+
+.hotbar .not_final {
+  border-right: 0;
+}
+
+.hotbar ul {
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-top: -1px;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotbar ul p {
+  padding: 5px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  line-height: 1.5;
+  background-color: var(--toolbar-bg);
+  border: 1px solid #000000;
+  border-top: 0;
+  margin: 0;
+}
+
+.content {
+  margin-top: 140px;
+}
+
+.carousel {
+  width: 93vw;
+  height: MIN(40vw, 500px);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto 0 auto;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .controls {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: calc(50% - calc(MIN(calc(5 * 1vw), 50px) / 2));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.carousel .controls .control {
+  font-family: sans-serif;
+  font-size: MIN(18px, calc(3 * 1vw));
+  background-color: #ffffff99;
+  border-radius: 50%;
+  margin: 0 5px;
+  height: MIN(calc(5 * 1vw), 50px);
+  width: MIN(calc(5 * 1vw), 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.carousel:hover .controls {
+  opacity: 1;
+}
+
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
+}
+
+.carousel .slides .slide {
+  min-width: 100%;
+  min-height: MIN(40vw, 500px);
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */

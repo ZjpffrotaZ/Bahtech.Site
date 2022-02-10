@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang ="pt-BR">
+<html lang ="pt-br">
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,36 +13,44 @@
     <title>Bahtech Team 16041</title>
     
     <!-- Additional CSS Files -->
-    <link href="css/estilo.css" rel="stylesheet">
-    <link href ="css/carousel.css" rel = "stylesheet">
-    
+    <link href="css/style.css" rel="stylesheet">
     </head>
-        <body>
-            <h1> Bem vindo ao nosso site</h1>
-            <h2> Estamos aqui para mostrar um pouco do nosso trabalho.</h2>
-  
-   <!--inicio do carrocel-->
-   
-   <div class="carousel" style="font: serif;">
-        <div class="slides">
-            <img src="https://images.vexels.com/media/users/3/71333/raw/7fab2f1c46e4208c996ddade1ede7749-floresta-dos-desenhos-animados-do-lado-do-rio-paisagem.jpg" alt="slide image" class="slide">
-            <img src="https://images.vexels.com/media/users/3/71333/raw/7fab2f1c46e4208c996ddade1ede7749-floresta-dos-desenhos-animados-do-lado-do-rio-paisagem.jpg" alt="slide image" class="slide">
-            <img src="https://images.vexels.com/media/users/3/71333/raw/7fab2f1c46e4208c996ddade1ede7749-floresta-dos-desenhos-animados-do-lado-do-rio-paisagem.jpg" alt="slide image" class="slide">
+    <body>
+        <div class="header">
+            <div class="toolbar">
+                <img src="images/Logo_dig.svg">
+            </div>
+            <div class="hotbar">
+                <ul>
+                    <li><button id="inicio" type="reset"><p>ínicio</p></li></ul></button>
+                    <li><button id="loja" type="reset"><p>loja oficial</p></li></ul></button>
+                    <li><button id="ftc" type="reset"><p>sobre a ftc</p></li></ul></button>
+                    <li><button id="nos" type="reset"><p>sobre nós</p></li></ul></button>
+                    <li><button id="eventos" type="reset"><p>eventos</p></li></ul></button>
+                    <li><button id="temporadas" type="reset"><p>temporadas</p></li></ul></button>
+                    <li><button id="patrocinadores" type="reset"><p>patrocinadores</p></li></ul></button>
+                    <li><button id="doacoes" type="reset"><p>Doações</p></li></ul></button>
+                <!-- substituir /button por a href link -->
+                </ul>
+            </div>
         </div>
-        <div class="controls">
-            <div class="control prev-slide">&#9668;</div>
-            <div class="control next-slide">&#9658;</div>
-        </div>
-    </div>
-   <!--fim do carrocel-->
-            
-        <h3> esse é o h3</h3>
-        <h4> esse é o h4 </h4>
-        <h5> esse é o h5</h5>
-        <h6> esse é o h6 </h6>
-        <p> esse é o paragrafo </p>
         
-        <script src="javaScript/node_modules"></script>
-        <script scr= "JavaScript/carousel.js"></script>
+        <div class="content">
+            <div class="carousel" style="font: serif;">
+                <div class="slides">
+                    <img src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide">
+
+                    <img src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide">
+
+                    <img src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide">
+                </div>
+                <div class="controls">
+                    <div class="control prev-slide">&#9668;</div>
+                    <div class="control next-slide">&#9658;</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="javaScript/carousel.js"></script>
     </body>
 </html>
