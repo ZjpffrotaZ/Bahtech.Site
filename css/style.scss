@@ -76,24 +76,20 @@ h2,h3,h4,h5 {
   }
 
   img {
-    height: 50px;
+    height: 80px;
   }
   
-  #logo {
-    height: 75px;
-  }
-
   .sidebar_toggle {
     cursor: default;
     ul{
       display: none;
     }
     svg {
-      transition: .3s;
+      transition: .5s;
     }
     &.is_open {
       #first_bar{
-        transform: translateY(18px) translateX(-4px) rotate(45deg);
+        transform: translateY(11px) translateX(-1px) rotate(45deg);
       }
       #second_bar{
         transform: rotate(-45deg);
@@ -155,7 +151,7 @@ h2,h3,h4,h5 {
       width: 25vw;
       background-color: var(--toolbar-bg);
       display: block;
-      transform: translateX(-25vh);
+      transform: translateX(-30vh);
       transition: ease-out .5s;
       li {
         cursor: pointer;
@@ -183,7 +179,6 @@ h2,h3,h4,h5 {
    position: relative;
    margin: 10px auto 0 auto;
    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-
    .controls {
      opacity: 0;
      display: flex;
@@ -192,9 +187,8 @@ h2,h3,h4,h5 {
      top: calc(50% - calc(MIN(calc(5 * 1vw), 50px) / 2));
      justify-content: space-between;
      width: 100%;
-     z-index: 5;
+     z-index: 1;
      transition: all ease 0.5s;
-
      .control {
        font-family: sans-serif;
        font-size: MIN(18px, calc(3 * 1vw));
@@ -211,11 +205,9 @@ h2,h3,h4,h5 {
        cursor: pointer;
      }
    }
-
    &:hover .controls {
      opacity: 1;
    }
-   
    .slides {
      position: absolute;
      top: 50%;
@@ -224,8 +216,8 @@ h2,h3,h4,h5 {
      width: 100%;
      transition: 1s ease-in-out all;
 
-     .slide, img {
-       width: 93vw;
+     .slide {
+       width: 100em;
        min-height: $carousel-height;
        height: auto;
      }

@@ -87,11 +87,7 @@ h2, h3, h4, h5 {
 }
 
 .toolbar img {
-  height: 50px;
-}
-
-.toolbar #logo {
-  height: 75px;
+  height: 80px;
 }
 
 .toolbar .sidebar_toggle {
@@ -103,13 +99,13 @@ h2, h3, h4, h5 {
 }
 
 .toolbar .sidebar_toggle svg {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .toolbar .sidebar_toggle.is_open #first_bar {
-  -webkit-transform: translateY(18px) translateX(-4px) rotate(45deg);
-          transform: translateY(18px) translateX(-4px) rotate(45deg);
+  -webkit-transform: translateY(11px) translateX(-1px) rotate(45deg);
+          transform: translateY(11px) translateX(-1px) rotate(45deg);
 }
 
 .toolbar .sidebar_toggle.is_open #second_bar {
@@ -224,7 +220,7 @@ h2, h3, h4, h5 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
@@ -269,8 +265,8 @@ h2, h3, h4, h5 {
   transition: 1s ease-in-out all;
 }
 
-.carousel .slides .slide, .carousel .slides img {
-  width: 93vw;
+.carousel .slides .slide {
+  width: 100em;
   min-height: MIN(40vw, 500px);
   height: auto;
 }
