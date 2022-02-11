@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang ="pt-br">
+<html lang ="pt">
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description: " content="">
     <meta name="author: " content="Joao Pedro Frota">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link rel="BahtechLogo" href="images/paisagem.jpg" type="image.jpg" />
     <title>Bahtech Team 16041</title>
     
@@ -16,33 +15,53 @@
     <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <!-- The page's header and sidebar -->
         <div class="header">
             <div class="toolbar">
-                <img src="images/Logo_dig.svg">
+                <div class="sidebar_toggle">
+                    <ul>
+                        <li><svg id="first_bar" width="50" height="10">
+                            <rect width="40" height="3.5"/>
+                        </svg></li>
+                        <li><svg id="second_bar" width="50" height="10">
+                            <rect width="40" height="3.5"/>
+                        </svg></li>
+                        <li><svg id="third_bar" width="50" height="10">
+                            <rect width="40" height="3.5""/>
+                        </svg></li>
+                    </ul>
+                </div>
+                <span class="header_imgs" ><a href=""><img src="images/Logo_dig.svg" id="logo"></a></span>
+                <span class="header_imgs"><a href=""><img src="images/loja.svg"></a></span>
             </div>
-            <div class="hotbar">
+            <div class="sidebar">
                 <ul>
-                    <li><button id="inicio" type="reset"><p>ínicio</p></li></ul></button>
-                    <li><button id="loja" type="reset"><p>loja oficial</p></li></ul></button>
-                    <li><button id="ftc" type="reset"><p>sobre a ftc</p></li></ul></button>
-                    <li><button id="nos" type="reset"><p>sobre nós</p></li></ul></button>
-                    <li><button id="eventos" type="reset"><p>eventos</p></li></ul></button>
-                    <li><button id="temporadas" type="reset"><p>temporadas</p></li></ul></button>
-                    <li><button id="patrocinadores" type="reset"><p>patrocinadores</p></li></ul></button>
-                    <li><button id="doacoes" type="reset"><p>Doações</p></li></ul></button>
-                <!-- substituir /button por a href link -->
+                    <li class="not_final"><button>In&iacute;cio</button></li>
+                    <li class="not_final"><button>Sobre n&oacute;s</button></li>
+                    <li class="not_final"><button>Sobre a FTC</button></li>
+                    <li class="not_final"><button>Eventos</button></li>
+                    <li class="not_final"><button>Temporadas</button></li>
+                    <li class="not_final"><button>Doa&ccedil;&otilde;es</button></li>
+                    <li class="not_final"><button>Patrocinadores</button></li>
+                    <li><button>Contate-nos</button></li>
                 </ul>
             </div>
         </div>
-        
         <div class="content">
+            <!-- Main carousel-->
             <div class="carousel" style="font: serif;">
                 <div class="slides">
-                    <img src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide">
+                    <div class="slide">
+                        <img src="https://picsum.photos/1280/720?random=1" alt="slide image">
+                    </div>
 
-                    <img src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide">
+                    <div class="slide">
+                        <img src="https://picsum.photos/1280/720?random=2" alt="slide image">
+                    </div>
 
-                    <img src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide">
+                    <div class="slide">
+                        <img src="https://picsum.photos/1280/720?random=3" alt="slide image">
+                    </div>
                 </div>
                 <div class="controls">
                     <div class="control prev-slide">&#9668;</div>
@@ -50,7 +69,8 @@
                 </div>
             </div>
         </div>
-
+        
         <script src="javaScript/carousel.js"></script>
+        <script src="javaScript/sidebar.js"></script>
     </body>
 </html>

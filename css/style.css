@@ -1,14 +1,25 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', serif;
+  font-size: MIN(15px, 2vw);
+  font-weight: 200;
+}
+
 html {
   height: 100vh;
   font-size: 10px;
-  font-family: 'poppins', serif;
   overflow-x: hidden;
-  --toolbar-bg: #949494;
+  --hover-color: #b4b4b4;
+  --color-toolbar: #000;
+  --toolbar-bg: #bebebe;
   --body-bg: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: ligh) {
   html {
+    --hover-color: #252525;
+    --color-toolbar: #ffffff;
     --toolbar-bg: #313131;
     --body-bg: #000000;
   }
@@ -30,13 +41,6 @@ h1 {
   color: #a50000;
 }
 
-p {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-  color: black;
-}
-
 h2, h3, h4, h5 {
   color: black;
 }
@@ -51,8 +55,7 @@ h2, h3, h4, h5 {
 }
 
 .toolbar {
-  border-bottom: 1px solid black;
-  height: 60px;
+  height: 100px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,21 +64,78 @@ h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.toolbar ul {
+  list-style: none;
+  line-height: 11px;
+  padding: 0;
+  margin: 0;
+}
+
+.toolbar ul svg {
+  fill: #fff;
+}
+
+.toolbar img, .toolbar .sidebar_toggle {
+  -webkit-filter: drop-shadow(0 0 3px #0006);
+          filter: drop-shadow(0 0 3px #0006);
 }
 
 .toolbar img {
-  height: 55px;
+  height: 50px;
 }
 
-.hotbar .not_final {
-  border-right: 0;
+.toolbar #logo {
+  height: 75px;
 }
 
-.hotbar ul {
+.toolbar .sidebar_toggle {
+  cursor: default;
+}
+
+.toolbar .sidebar_toggle ul {
+  display: none;
+}
+
+.toolbar .sidebar_toggle svg {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.toolbar .sidebar_toggle.is_open #first_bar {
+  -webkit-transform: translateY(18px) translateX(-4px) rotate(45deg);
+          transform: translateY(18px) translateX(-4px) rotate(45deg);
+}
+
+.toolbar .sidebar_toggle.is_open #second_bar {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.toolbar .sidebar_toggle.is_open #third_bar {
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+}
+
+@media only screen and (max-width: 914px) {
+  .toolbar .sidebar_toggle {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .toolbar .sidebar_toggle ul {
+    display: block;
+  }
+}
+
+.sidebar ul {
+  background-color: var(--toolbar-bg);
   width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -89,7 +149,7 @@ h2, h3, h4, h5 {
   display: flex;
 }
 
-.hotbar ul p {
+.sidebar ul li {
   padding: 5px 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -97,16 +157,48 @@ h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30px;
   line-height: 1.5;
+  font-size: 16px;
   background-color: var(--toolbar-bg);
-  border: 1px solid #000000;
-  border-top: 0;
   margin: 0;
 }
 
+.sidebar ul li:hover {
+  background-color: var(--hover-color);
+}
+
+.sidebar ul li button {
+  color: var(--color-toolbar);
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #0000;
+  border: none;
+}
+
+@media only screen and (max-width: 914px) {
+  .sidebar ul {
+    height: 100vh;
+    width: 25vw;
+    background-color: var(--toolbar-bg);
+    display: block;
+    -webkit-transform: translateX(-25vh);
+            transform: translateX(-25vh);
+    -webkit-transition: ease-out .5s;
+    transition: ease-out .5s;
+  }
+  .sidebar ul li {
+    cursor: pointer;
+    border: 0px;
+    border-top: 0;
+  }
+  .sidebar.is_open ul {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .content {
-  margin-top: 140px;
+  margin-top: 160px;
 }
 
 .carousel {
@@ -132,7 +224,7 @@ h2, h3, h4, h5 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
@@ -177,8 +269,8 @@ h2, h3, h4, h5 {
   transition: 1s ease-in-out all;
 }
 
-.carousel .slides .slide {
-  min-width: 100%;
+.carousel .slides .slide, .carousel .slides img {
+  width: 93vw;
   min-height: MIN(40vw, 500px);
   height: auto;
 }
