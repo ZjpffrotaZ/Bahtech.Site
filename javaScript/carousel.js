@@ -32,3 +32,4 @@ function changeSlide(next = true) {
     changeSlide(false);
     restart();
   });
+  
