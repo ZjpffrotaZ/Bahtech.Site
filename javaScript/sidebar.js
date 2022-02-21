@@ -4,6 +4,6 @@ var sidebar = document.querySelector('.menu');
 toggleBtn.addEventListener('click', toggleSidebar)
 
 function toggleSidebar() {
-    toggleBtn.classList.toggle('is_open');
-    sidebar.classList.toggle('is_open');
+    toggleBtn.classList.toggle('isOpen');
+    sidebar.classList.toggle('isOpen');
   }
