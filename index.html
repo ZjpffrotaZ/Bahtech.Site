@@ -11,7 +11,7 @@
     <title>Bahtech Team 16041</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" crossorigin="anonymous">
     <link rel="BahtechLogo" href="images/paisagem.jpg" type="image.jpg" />
 
     <!-- Additional CSS Files -->
@@ -33,7 +33,7 @@
             </svg></li>
           </ul>
         </div>
-        <div><a href="index.html"><img src="images/Logo_dig.svg" id="logo"></a></div>
+        <div><a href="index.html"><img src="images/Logo_dig.svg" id="logo" alt="BahTech"></a></div>
         <div><a href="subpages/store.html"><p>Acessar<br>a loja</p></a></div>
     </header>
     
@@ -46,7 +46,7 @@
         <li> <a href=""><button> Temporadas     </button></a></li>
         <li> <a href=""><button> Doações        </button></a></li>
         <li> <a href=""><button> Patrocinadores </button></a></li>
-        <li>                   <a href=""><button> Contate-nos    </button></a></li>
+        <li> <a href=""><button> Contate-nos    </button></a></li>
       </ul>
     </nav>
 
@@ -69,16 +69,20 @@
             <h1>A melhor equipe do BRASIL</h1>
           </div></a>
         </div>
-        <div class="controls flexContainer">
-          <div class="control prev-slide flexContainer">&#9668;</div>
-          <div class="control next-slide flexContainer">&#9658;</div>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="control prev-slide" viewBox="0 0 56.898 91">
+          <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="control next-slide" viewBox="0 0 56.898 91">
+          <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)"></path>
+        </svg>
       </div>
-      <div id="mission">
-        <span>
-          <h1>Nossa missão</h1>
-          <p>Nossa missão é espalhar os valores da FIRST e ajudar os jovens, envolvendo-os em atividades dinâmicas que desenvolvem habilidades em gestão e tecnologia, que inspiram inovação e que promovem capacidades de vida completas, incluindo autoconfiança, omunicação, e liderança</p>
-        </span>  
+      <div>
+        <div id="mission">
+          <span>
+            <h1>Nossa missão</h1>
+            <p>Nossa missão é espalhar os valores da FIRST e ajudar os jovens, envolvendo-os em atividades dinâmicas que desenvolvem habilidades em gestão e tecnologia, que inspiram inovação e que promovem capacidades de vida completas, incluindo autoconfiança, omunicação, e liderança</p>
+          </span>  
+        </div>
       </div>
       <div>
         <h1>Nossa missão</h1>
@@ -151,7 +155,6 @@
       </aside>
     </footer>
 
-    <script src="javaScript/carousel.js"></script>
-    <script src="javaScript/sidebar.js"></script>
+    <script src="javaScript/script.js"></script>
   </body>
 </html>
