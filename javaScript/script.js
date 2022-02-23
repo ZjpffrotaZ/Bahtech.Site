@@ -36,7 +36,7 @@ function changeSlide(next = true) {
 
 // Code responsible for the sidebar
 var toggleBtn = document.querySelector('.sidebarToggle');
-var sidebar = document.querySelector('.menu');
+var sidebar = document.querySelector('nav');
 
 toggleBtn.addEventListener('click', toggleSidebar)
 
@@ -45,8 +45,3 @@ function toggleSidebar() {
     sidebar.classList.toggle('isOpen');
 }
 
-
-const bar = document.querySelector('#mission h1');
-
-bar.textContent += " sosos";
-bar.style.fontSize = "30px"

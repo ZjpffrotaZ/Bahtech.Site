@@ -24,14 +24,13 @@ html {
   height: 100vh;
   font-size: 10px;
   overflow-x: hidden;
-  --hover-color: #b4b4b4;
   --color-toolbar: #000;
   --toolbar-bg: #bebebe;
   --body-bg: #ffffff;
   --bg-red-tone: rgb(255, 137, 137);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
     --hover-color: #252525;
     --color-toolbar: #ffffff;
@@ -60,7 +59,7 @@ header {
   border: 0;
   z-index: 2;
   height: 75px;
-  width: 100vw;
+  width: 100%;
   background-color: var(--toolbar-bg);
   padding: 10px 30px;
   -webkit-box-align: center;
@@ -137,9 +136,9 @@ header .sidebarToggle.isOpen #thirdBar {
 }
 
 nav {
+  top: 75px;
   position: fixed;
-  margin-top: -34px;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 
@@ -211,20 +210,27 @@ nav ul li button {
 
 main {
   color: var(--color-toolbar);
-  width: MIN(100vw, 1000px);
-  margin: 110px auto 0;
+  width: 100%;
+  margin: 130px auto 0;
 }
 
 main h1 {
-  font-size: large;
+  font-size: 40px;
+}
+
+main p, main h2 {
+  font-size: 25px;
 }
 
 main #mission {
-  padding: 10px 20px;
-  height: 70vh;
+  padding: 0 30px;
+  height: 60vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,17 +243,16 @@ main #mission span {
 }
 
 main #mission span p {
+  max-width: 800px;
   -webkit-box-flex: 5;
       -ms-flex: 5 0;
           flex: 5 0;
   margin: 0;
-  font-size: 25px;
   text-align: justify;
 }
 
 main #mission span h1 {
   text-align: center;
-  font-size: 40px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 260px;
           flex: 0 0 260px;
@@ -270,13 +275,177 @@ main #mission span h1 {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
+    margin-bottom: 20px;
   }
 }
 
-main .upperTriangle {
-  height: 10vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, var(--body-bg)), color-stop(50%, #0000));
-  background-image: linear-gradient(to bottom right, var(--body-bg) 50%, #0000 50%);
+main #connect {
+  margin: 90px 0;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #connect h1 {
+  width: 100%;
+  text-align: center;
+}
+
+main #connect h2 {
+  margin-top: 0;
+}
+
+main #connect p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+main #connect svg {
+  min-height: 60px;
+  min-width: 60px;
+  max-height: 60px;
+  max-width: 60px;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 30%;
+  background-color: var(--bg-red-tone);
+}
+
+main #connect dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #connect dl dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #connect div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 922px) {
+  main #connect div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main #connect > div {
+  width: 50%;
+  max-width: 500px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 922px) {
+  main #connect > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+main #team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #team > div {
+  width: 100%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+main #team > div svg {
+  height: 60px;
+  width: 60px;
+}
+
+main #team > div h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 60px;
+}
+
+main #team > div h2 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  main #team > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
+main #team h1 {
+  text-align: center;
+  width: 100%;
+}
+
+main .upperTrig, main .lowerTrig {
+  height: 40px;
+  width: 100%;
+  fill: var(--body-bg);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+main .lowerTrig {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
 }
 
 main > :nth-child(even) {
@@ -295,7 +464,7 @@ main .carousel {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: MIN(94vw, 1000px);
+  width: 94vw;
   height: MIN(40vw, 500px);
   border-radius: 10px;
   overflow: hidden;
@@ -332,6 +501,7 @@ main .carousel .control path {
 
 main .carousel .control:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 main .carousel .slides {
@@ -345,7 +515,7 @@ main .carousel .slides {
 }
 
 main .carousel .slides .slide {
-  min-width: MIN(94vw, 1000px);
+  min-width: 94vw;
   min-height: MIN(40vw, 500px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -357,6 +527,7 @@ main .carousel .slides .slide {
   background-image: linear-gradient(to bottom, #0000, black), url(https://picsum.photos/1280/720?random=2);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   color: white;
 }
 
@@ -365,12 +536,15 @@ main .carousel .slides .slide img {
 }
 
 main .carousel .slides .slide h1 {
-  font-size: 20px;
+  font-size: 45px;
 }
 
 @media only screen and (max-width: 922px) {
   main {
-    margin: 80px auto 0;
+    margin: 90px auto 0;
+  }
+  main .carousel .slides .slide h1 {
+    font-size: 30px;
   }
 }
 
@@ -389,7 +563,7 @@ footer {
   right: 0;
   left: 0;
   height: 125px;
-  width: 100vw;
+  width: 100%;
   color: var(--color-toolbar);
   background-color: var(--toolbar-bg);
 }
@@ -472,15 +646,5 @@ footer svg {
   footer img {
     margin: 0;
   }
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: var(--toolbar-bg);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #5c5c5c;
-  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
